@@ -1,0 +1,89 @@
+/* About Section */
+.about-me {
+    display: flex; /* Define o container como flexível */
+    justify-content: space-between;
+    padding: 0px 8%; /* Espaçamento interno */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff; /* Cor padrão para o texto */
+    flex-wrap: nowrap; /* Garante que os itens fiquem em linha */
+}
+
+.about-me img {
+    flex-shrink: 0; /* Garante que a imagem não encolha */
+    height: 400px; /* Altura fixa */
+    width: 400px; /* Largura fixa */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem para não distorcer */
+    background-color: #fff;
+}
+
+.about-me img:hover {
+    transition: 0.5s;
+    border: 4px solid #ff00ff; /* Destaque ao passar o mouse */
+    transform: scale(1.1); /* Ampliação ao passar o mouse */
+}
+
+.text-content {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do texto verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    max-width: 60%; /* Limita a largura do texto */
+}
+
+.about-me h2 {
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: 20px;
+}
+
+.about-me span {
+    color: #ff00ff;
+    border-radius: 0.5rem;
+    border: solid 1px #ff00ff;
+    padding: 1.25rem 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.about-second p {
+    text-align: justify; /* Alinha o texto para uma leitura fluida */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.6; /* Melhora o espaçamento entre linhas */
+    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+}
+
+.CV {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    width: 12rem;
+    padding: 1rem 0.5rem;
+    font-size: 18px;
+    text-align: center;
+    border-style: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.CV:hover {
+    background-color: #000;
+    border: 2px solid #ff00ff;
+    transform: scale(1.05); /* Amplia o botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Empilha os itens */
+        align-items: center;
+    }
+
+    .about-me img {
+        margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+    }
+
+    .text-content {
+        max-width: 100%; /* Permite que o texto ocupe toda a largura */
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+}

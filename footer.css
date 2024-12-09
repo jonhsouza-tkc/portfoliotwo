@@ -1,0 +1,46 @@
+/* Footer Section */
+
+footer {
+    border-top: 2px solid #ff00ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Espaçamento interno */
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px; /* Espaço entre os ícones */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove bullets */
+    margin-left: 7.5rem; /* Move os ícones para a direita */
+}
+
+.footer-list li {
+    list-style: none;
+}
+
+.footer-list i {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.footer-list a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: #ff00ff;
+    transition: 0.3s;
+}
+
+.text-footer {
+    color: #fff;
+    text-align: right;
+    margin: 0;
+    margin-right: 7rem; /* Move o parágrafo para a esquerda */
+}

@@ -1,1 +1,30 @@
 /* Projects Section */
+
+.projetos {
+    padding: 60px 10%;
+    background-color: #191919;
+}
+
+.first-secao {
+    color: #fff;
+
+}
+
+.second-secao {
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-secao {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff00ff; /* Cor substituída */
+}
+
+.subtitulo-secao {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}

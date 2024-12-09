@@ -1,0 +1,55 @@
+/* Contact Section */
+
+.contato {
+    padding: 90px 10%;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    height: 100vh; 
+}
+.subtitulo-secao {
+    color: #fff;
+}
+
+.contato p {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.lista-contato {
+    list-style: none;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lista-contato li {
+    margin: 10px 0;
+}
+
+.lista-contato a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-flex; 
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    transition: color 0.3s; /* Suaviza apenas a mudança de cor */
+}
+
+.lista-contato a:hover {
+    color: #ff00ff; /* Aplica a cor somente no texto e no ícone */
+    text-decoration: none; /* Evita sublinhados no hover */
+}
+
+
+.lista-contato i {
+    font-size: 1.2rem; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Suaviza a mudança de cor dos ícones */
+}
+
+.lista-contato span {
+    transition: color 0.3s; /* Suaviza a mudança de cor do texto */
+}

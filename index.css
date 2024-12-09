@@ -1,3 +1,289 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');        
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
 body {
-    background-color: aliceblue;
+    background-color: #191919;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; 
+}
+
+.home-first {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column; /* Organiza os textos verticalmente */
+    row-gap: 20px; /* Espaçamento entre os textos */
+}
+
+.home-first-name {
+    display: block;
+    top: 250px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+}
+
+.home-first-name p {
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    gap: 70px; /* Espaçamento entre os ícones */
+}
+
+.sociais img {
+    height: 40px;
+    width: 40px;
+    background-color: #ff00ff;
+    border: 4px solid #fff;
+     /* border: 4px solid #fff;  */
+    transition: transform 0.5s; 
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.sociais img:hover {
+    border: 3px solid #ff00ff;
+    transform: scale(1.1); 
+    transition: border 0.5s;
+    
+}
+
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; /* Garante que nenhum conteúdo extra vaze */
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+.home-img img {
+    max-width: 80%; /* Garante que a imagem não ultrapasse o tamanho da div */
+    max-height: 100%; /* Define uma altura máxima proporcional */
+    object-fit: contain; /* Garante que a imagem mantenha suas proporções */
+    pointer-events: auto; /* Permite interações apenas na imagem visível */
+}
+
+
+/* About Section */
+.about-me {
+    display: flex; /* Define o container como flexível */
+    justify-content: space-between;
+    padding: 0px 8%; /* Espaçamento interno */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff; /* Cor padrão para o texto */
+    flex-wrap: nowrap; /* Garante que os itens fiquem em linha */
+}
+
+.about-me img {
+    flex-shrink: 0; /* Garante que a imagem não encolha */
+    height: 400px; /* Altura fixa */
+    width: 400px; /* Largura fixa */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem para não distorcer */
+    background-color: #fff;
+}
+
+.about-me img:hover {
+    transition: 0.5s;
+    border: 4px solid #ff00ff; /* Destaque ao passar o mouse */
+    transform: scale(1.1); /* Ampliação ao passar o mouse */
+}
+
+.text-content {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do texto verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    max-width: 60%; /* Limita a largura do texto */
+}
+
+.about-me h2 {
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: 20px;
+}
+
+.about-me span {
+    color: #ff00ff;
+    border-radius: 0.5rem;
+    border: solid 1px #ff00ff;
+    padding: 0.5rem 1rem;
+}
+
+.about-second p {
+    text-align: justify; /* Alinha o texto para uma leitura fluida */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.6; /* Melhora o espaçamento entre linhas */
+    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+}
+
+.CV {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    border-style: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.CV:hover {
+    background-color: #000;
+    border: 2px solid #ff00ff;
+    transform: scale(1.05); /* Amplia o botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Empilha os itens */
+        align-items: center;
+    }
+
+    .about-me img {
+        margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+    }
+
+    .text-content {
+        max-width: 100%; /* Permite que o texto ocupe toda a largura */
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+}
+
+
+
+/* Apresentation Section */
+.apresentation h3 {
+    color: #ff00ff;
+    font-size: 30px;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* Projects Section */
+
+.projetos {
+    padding: 60px 10%;
+    background-color: #191919;
+}
+
+.first-secao {
+    color: #fff;
+
+}
+
+.second-secao {
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-secao {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff00ff; /* Cor substituída */
+}
+
+.subtitulo-secao {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+
+/* Contact Section */
+.contato {
+    padding: 90px 10%;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    height: 100vh; 
+}
+.subtitulo-secao {
+    color: #fff;
+}
+
+.contato p {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.lista-contato {
+    list-style: none;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lista-contato li {
+    margin: 10px 0;
+}
+
+.lista-contato a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-flex; 
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    transition: color 0.3s; /* Suaviza apenas a mudança de cor */
+}
+
+.lista-contato a:hover {
+    color: #ff00ff; /* Aplica a cor somente no texto e no ícone */
+    text-decoration: none; /* Evita sublinhados no hover */
+}
+
+
+.lista-contato i {
+    font-size: 1.2rem; /* Tamanho dos ícones */
+    transition: color 0.3s; /* Suaviza a mudança de cor dos ícones */
+}
+
+.lista-contato span {
+    transition: color 0.3s; /* Suaviza a mudança de cor do texto */
+}
+
+
+/* Footer Section */
+
+.rodape {
+    padding: 20px 10%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.rodape p {
+    font-size: 14px;
+    margin: 0;
 }

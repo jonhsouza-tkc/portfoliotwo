@@ -7,16 +7,16 @@
     left: 0;
     z-index: 1000;
     background-color: #191919;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     padding: 35px 80px; /* Espaçamento interno */
 }
 
 
 .header-menu {
-    display: flex; /* Alinha os itens horizontalmente */
-    justify-content: space-between; /* Nome à esquerda e menu à direita */
-    align-items: center; /* Centraliza verticalmente */
-    width: 100%; /* Garante que ocupa a largura total */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
 }
 
 .header-menu-name {
@@ -35,11 +35,9 @@
 .header-menu-menu {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
     gap: 30px;
+    transition: transform 0.3s ease;
 }
-
 .header-menu-menu li a {
     color: #fff;
     text-decoration: none;
@@ -50,4 +48,39 @@
     color: #ff00ff;
     text-decoration: underline;
     transition: 0.5s;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-menu-menu {
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #191919;
+        padding: 20px;
+        border: 1px solid #ff00ff;
+        transform: translateY(-200%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .header-menu-menu.open {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }

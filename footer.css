@@ -5,17 +5,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem; /* Espaçamento interno */
+    padding: 1rem 2rem;
 }
 
 .footer-list {
     display: flex;
     flex-direction: row;
-    gap: 25px; /* Espaço entre os ícones */
+    gap: 25px; 
     margin: 0;
     padding: 0;
-    list-style: none; /* Remove bullets */
-    margin-left: 7.5rem; /* Move os ícones para a direita */
+    list-style: none; 
+    margin-left: 7.5rem; 
 }
 
 .footer-list li {
@@ -42,5 +42,22 @@ footer {
     color: #fff;
     text-align: right;
     margin: 0;
-    margin-right: 7rem; /* Move o parágrafo para a esquerda */
+    margin-right: 7rem;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-list {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .text-footer {
+        margin: 0;
+    }
 }

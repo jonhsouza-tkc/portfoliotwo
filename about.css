@@ -1,39 +1,41 @@
 /* About Section */
 .about-me {
-    display: flex; /* Define o container como flexível */
+    display: flex; 
     justify-content: space-between;
-    padding: 0px 8%; /* Espaçamento interno */
+    padding: 0px 3%; 
+    margin-right: 2rem;
     padding-top: 100px;
     padding-bottom: 100px;
-    color: #fff; /* Cor padrão para o texto */
-    flex-wrap: nowrap; /* Garante que os itens fiquem em linha */
+    color: #fff; /*
+    /* box-shadow: 0px 2px 5px rgba(163, 160, 160, 0.2); */
+    flex-wrap: nowrap; 
 }
 
 .about-me img {
-    flex-shrink: 0; /* Garante que a imagem não encolha */
-    height: 400px; /* Altura fixa */
-    width: 400px; /* Largura fixa */
-    border-radius: 50%; /* Torna a imagem circular */
-    object-fit: cover; /* Ajusta a imagem para não distorcer */
+    flex-shrink: 0; 
+    height: 400px; 
+    width: 400px; 
+    border-radius: 50%; 
+    object-fit: cover; 
     background-color: #fff;
 }
 
 .about-me img:hover {
     transition: 0.5s;
-    border: 4px solid #ff00ff; /* Destaque ao passar o mouse */
-    transform: scale(1.1); /* Ampliação ao passar o mouse */
+    border: 4px solid #ff00ff; 
+    transform: scale(1.1); 
 }
 
 .text-content {
-    flex: 1; /* Faz o texto ocupar o espaço restante */
+    flex: 1; 
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo do texto verticalmente */
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
-    max-width: 60%; /* Limita a largura do texto */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    max-width: 60%; 
 }
 
 .about-me h2 {
-    font-size: 50px; /* Tamanho da fonte do título */
+    font-size: 50px; 
     margin-bottom: 20px;
 }
 
@@ -46,10 +48,10 @@
 }
 
 .about-second p {
-    text-align: justify; /* Alinha o texto para uma leitura fluida */
-    font-size: 18px; /* Tamanho da fonte */
-    line-height: 1.6; /* Melhora o espaçamento entre linhas */
-    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+    text-align: justify; 
+    font-size: 18px; 
+    line-height: 1.6;
+    margin-bottom: 2rem; 
 }
 
 .CV {
@@ -69,21 +71,24 @@
 .CV:hover {
     background-color: #000;
     border: 2px solid #ff00ff;
-    transform: scale(1.05); /* Amplia o botão ao passar o mouse */
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     .about-me {
-        flex-direction: column; /* Empilha os itens */
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 20px;
     }
 
     .about-me img {
-        margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .text-content {
-        max-width: 100%; /* Permite que o texto ocupe toda a largura */
-        text-align: center; /* Centraliza o texto em telas menores */
+        max-width: 100%;
     }
 }

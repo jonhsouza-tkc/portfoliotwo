@@ -7,8 +7,14 @@
     display: flex;
     flex-direction: column;
     margin-right: 400px;
-    height: 100vh; 
+    height: 100vh;
 }
+
+.titulo-secao {
+    font-size: 20px;
+
+}
+
 .subtitulo-secao {
     color: #fff;
 }
@@ -33,23 +39,35 @@
 .lista-contato a {
     color: #fff;
     font-size: 1rem;
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: none; 
     display: inline-flex; 
-    gap: 8px; /* Espaço entre o ícone e o texto */
-    transition: color 0.3s; /* Suaviza apenas a mudança de cor */
+    gap: 8px; 
+    transition: color 0.3s; 
 }
 
 .lista-contato a:hover {
-    color: #ff00ff; /* Aplica a cor somente no texto e no ícone */
-    text-decoration: none; /* Evita sublinhados no hover */
+    color: #ff00ff; 
+    text-decoration: none;
 }
 
 
 .lista-contato i {
-    font-size: 1.2rem; /* Tamanho dos ícones */
-    transition: color 0.3s; /* Suaviza a mudança de cor dos ícones */
+    font-size: 1.2rem; 
+    transition: color 0.3s;
 }
 
 .lista-contato span {
-    transition: color 0.3s; /* Suaviza a mudança de cor do texto */
+    transition: color 0.3s; 
+}
+
+@media (max-width: 768px) {
+    .contato {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .lista-contato {
+        gap: 10px;
+    }
 }

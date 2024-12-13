@@ -2,13 +2,13 @@
 
 .header {
     width: 100%;
-    position: fixed; /* Fixa o header no topo */
+    position: fixed; 
     top: 0;
     left: 0;
     z-index: 1000;
     background-color: #191919;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 35px 80px; /* Espaçamento interno */
+    padding: 35px 80px; 
 }
 
 

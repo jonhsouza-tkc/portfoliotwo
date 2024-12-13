@@ -31,9 +31,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centraliza o conteúdo */
-    text-align: center; /* Alinha o texto ao centro */
-    row-gap: 20px; /* Espaçamento entre os textos */
+    align-items: center; 
+    text-align: center; 
+    row-gap: 20px; 
     color: #fff;
 }
 

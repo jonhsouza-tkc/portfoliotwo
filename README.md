@@ -1,5 +1,5 @@
 🚀 Portfolio do Jonh Wesley
-Bem-vindo ao meu portfólio pessoal! Aqui, você encontrará uma vitrine dos meus projetos e um pouco sobre mim como desenvolvedor front-end. Desenvolvi este site com atenção ao design responsivo, experiência do usuário e funcionalidades intuitivas.
+Bem-vindo ao meu portfólio pessoal! Aqui, você encontrará alguns dos meus projetos e um pouco sobre mim como desenvolvedor front-end.
 
 📋 Sobre o Projeto
 Este é um portfólio desenvolvido com HTML, CSS e JavaScript. Ele inclui seções organizadas e elegantes para apresentar:

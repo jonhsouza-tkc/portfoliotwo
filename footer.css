@@ -53,11 +53,12 @@ footer {
     }
 
     .footer-list {
+        margin-left: 0;
         justify-content: center;
-        margin: 10px 0;
     }
 
     .text-footer {
-        margin: 0;
+        text-align: center;
+        margin-right: 0;
     }
 }

@@ -91,3 +91,13 @@
         max-width: 100%;
     }
 }
+
+/* Ajustes pra telas menores */
+
+@media (max-width: 480px) {
+    .about-me img {
+        width: 60%;
+        height: auto;
+    }
+}
+
